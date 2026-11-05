@@ -1,0 +1,202 @@
+@import url('https://googleapis.com');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.top-bar {
+    background-color: #fa0202;
+    border: 10px;
+    width: 100%;
+    text-align: left;
+
+    .contact-info {
+        color: white;
+        font-size: 14px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        line-height: 20px;
+        word-wrap: break-word;
+    }
+}
+
+nav {
+    position:absolute;
+    top: 23px;
+    left: 50%;
+    transform: translatex(-60%);
+    z-index: 2;
+
+    display: flex;
+    width: min(90%, 1624px);
+    height: 76px;
+    box-sizing: border-box;
+    margin-left: 149px; margin-right: 147px; margin-top: 23px;
+    background: var(--surface, white);
+    box-shadow: 0px 6px 24px rgba(15.30, 38.25, 66.30, 0.08);
+    border-radius: 40px;
+    border: 1px solid var(--surface, white) solid;
+    backdrop-filter: blur(8px);
+    .logo {
+        img {
+            width: 55px;
+            height: 55px;
+            margin-left: 36px; margin-top: 11px; margin-bottom: 10px; margin-right: 1533px;
+        }
+        .p1 {
+            margin-left: 105px; margin-top: -65px; margin-bottom: 40px; margin-right: 1369px;
+            color: #737373;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            line-height: 20px;
+            word-wrap: break-word
+        }
+        .p2 {
+            margin-left: 105px; margin-top: -40px; margin-bottom: 40px; margin-right: 1369px;
+            color: #0325D0;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            line-height: 24px;
+            word-wrap: break-word
+        }
+            
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 40px;
+        margin-left: -900px; margin-top: 30px; margin-bottom: 40px; margin-right: 1369px;
+        padding: 0;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #000;
+        
+    }
+
+    .search-box {
+        margin-left: -1241px; margin-top: 20px; margin-bottom: 20px; margin-right: 60px;
+        width: 100%;
+        padding: 10px 12px 10px 38px;
+        border: 1.5px solid rgb(209, 213, 219);
+        border-radius: 40px;
+        font-size: 13px;
+        outline: none;
+        box-sizing: border-box;
+        font-family: inherit;
+        color: rgb(17, 24, 39);
+        background-color: #EEEEEE;
+        box-shadow: none;
+
+        input[type="search"] {
+            margin-left: -30px; margin-top: -20px; margin-bottom: -20px; margin-right: 0px;
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background-color: #EEEEEE;
+        }
+
+       
+    }
+}
+
+.hero {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 48px 10%;
+    color: white;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.12) );
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+.hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 24px;
+    line-height: 64px;
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.hero-button {
+    display: inline-block;
+    padding: 11px 18px;
+    background-color: #1D70D8;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.hero-button + .hero-button {
+    background-color: #FFFFFF30;
+    border: 0.5px solid white;
+}
+
+.hero-location {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    border-radius: 8px;
+    background: transparent;
+    font-size: clamp();
+}
+
+.hero-location p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+}
